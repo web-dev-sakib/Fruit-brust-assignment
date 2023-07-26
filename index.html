@@ -22,7 +22,6 @@
         .font-lato {
             font-family: 'Lato', sans-serif;
         }
-
         .overlay-light {
             background-image: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);
         }
@@ -167,8 +166,8 @@
 
         <!-- Fruit badge section -->
 
-        <div class="hidden md:block">
-            <div class="flex gap-24 bg-white px-20 py-12 shadow-light md:w-full lg:w-3/4 rounded-lg sm:relative md:static -top-24 left-48">
+        <div class="hidden md:block mt-0 md:mt-10">
+            <div class="flex gap-4 lg:gap-8 xl:gap-24 bg-white px-10 lg:px-20 py-12 shadow-light md:w-full lg:w-3/4 rounded-xl static lg:relative lg:-top-32 xl:-top-36 2xl:-top-40 lg:left-36 xl:left-40 2xl:left-48">
                 <div>
                     <img src="images/fruit1.png" alt="">
                     <p>Strawberry</p>
@@ -191,11 +190,64 @@
                 </div>
             </div>
         </div>
-        
-
     </header>
 
-    <main>
+    <main class="container mx-auto">
+
+        <!-- Deal section -->
+
+        <section class="my-36">
+            <div class="flex justify-between">
+                <div>
+                    <h2 class="text-5xl font-bold">Deal of the day</h2>
+                    <p class="w-[550px] mt-6 text-[#717171]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+    
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                    <div class="flex flex-col p-2 rounded-box font-bold ">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:15;"></span>:
+                      </span>
+                      <p class="font-light mr-6 mt-2 text-[#717171]">Days</p>
+                    </div> 
+                    <div class="flex flex-col p-2 rounded-box font-bold">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:10;"></span>:
+                      </span>
+                      <p class="font-light mr-4 mt-2 text-[#717171]">Hours</p>
+                    </div> 
+                    <div class="flex flex-col p-2 rounded-box font-bold">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:24;"></span>:
+                      </span>
+                      <p class="font-light mr-5 mt-2 text-[#717171]">Min</p>
+                    </div> 
+                    <div class="flex flex-col p-2 rounded-box font-bold">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:39;"></span>
+                      </span>
+                      <p class="font-light  mt-2 text-[#717171]">Sec</p>
+                    </div>
+                  </div>
+            </div>
+
+              <div>
+                <div>
+                    <img src="./images/fruit6.png" alt="">
+                    <h3>12.90$ - 18.85$</h3>
+                    <hr>
+                    <p>Apples</p>
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="w-1/2 mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                </div>
+              </div>
+        </section>
+
 
     </main>
 
